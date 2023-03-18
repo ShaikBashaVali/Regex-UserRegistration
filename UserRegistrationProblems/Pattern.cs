@@ -23,6 +23,8 @@ namespace UserRegistrationProblems
 
         //UC5-Password Rule1– minimum 8 Characters.
         public static string PasswordRule1Pattern = "^[a-zA-Z0-9]{8,}$";
+        //UC6-Password Rule2– Should have at least 1 Upper Case.
+        public static string PasswordRule2Pattern = "^[A-Z]{1}[A-Za-z0-9]{8,}$";
 
         /// <summary>
         /// This method used to check Validation
