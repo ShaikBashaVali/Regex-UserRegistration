@@ -18,6 +18,9 @@ namespace UserRegistrationProblems
         //UC3-Email has 3 mandatory parts (abc, bl & co) and 2 optional(xyz & in) with precise @ and.positions
         public static string EmailIdPattern = "^[A-Za-z]+[.][a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2}[.][a-zA-Z]{2}$";//abc.xyz@bl.co.in
 
+        //UC4-Country code follow by space and 10 digit number.
+        public static string MobileNumberPattern = "^[1-9]{2}?[ ][0-9]{10}$";//91 9966576672
+
         /// <summary>
         /// This method used to check Validation
         /// </summary>

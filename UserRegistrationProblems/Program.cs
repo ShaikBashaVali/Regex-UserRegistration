@@ -18,7 +18,8 @@ namespace UserRegistrationProblems
                 Console.WriteLine("1.Check Validation for First Name\n" +
                     "2.Check Validation for Last Name\n" +
                     "3.Check validation for Email Id\n" +
-                    "4.Exit\n");
+                    "4.Check validation for Mobile Number\n" +
+                    "5.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -70,6 +71,24 @@ namespace UserRegistrationProblems
                         }
                         Console.WriteLine("\nList of valid and Invalid Email Id:\n-------------------------------------");
                         Pattern.ValidatePattern(emailIdInputs, code2);
+                        Console.Write("\nPress any key to continue...... ");
+                        Console.ReadLine();
+                        break;
+
+                    case 4:
+                        Console.Clear();
+                        string code3 = Pattern.MobileNumberPattern;
+                        Console.WriteLine("Enter how many mobile number want to check for validation:");
+                        int number3 = Convert.ToInt32(Console.ReadLine());
+                        string[] mobileNumberInputs = new string[number3];
+                        Console.WriteLine("\nList of mobile number between 1 to {0} for check validation:\n----------------------------------------------------", number3);
+                        for (int i = 0; i < number3; i++)
+                        {
+                            Console.Write("{0} =>  ", i + 1);
+                            mobileNumberInputs[i] = Console.ReadLine();
+                        }
+                        Console.WriteLine("\nList of valid and Invalid Mobile number:\n-------------------------------------");
+                        Pattern.ValidatePattern(mobileNumberInputs, code3);
                         Console.Write("\nPress any key to continue...... ");
                         Console.ReadLine();
                         break;
