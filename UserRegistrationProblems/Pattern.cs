@@ -21,6 +21,9 @@ namespace UserRegistrationProblems
         //UC4-Country code follow by space and 10 digit number.
         public static string MobileNumberPattern = "^[1-9]{2}?[ ][0-9]{10}$";//91 9966576672
 
+        //UC5-Password Rule1– minimum 8 Characters.
+        public static string PasswordRule1Pattern = "^[a-zA-Z0-9]{8,}$";
+
         /// <summary>
         /// This method used to check Validation
         /// </summary>
