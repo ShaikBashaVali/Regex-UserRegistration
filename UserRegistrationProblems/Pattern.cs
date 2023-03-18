@@ -26,6 +26,9 @@ namespace UserRegistrationProblems
         //UC6-Password Rule2– Should have at least 1 Upper Case.
         public static string PasswordRule2Pattern = "^[A-Z]{1}[A-Za-z0-9]{8,}$";
 
+        //UC7-Password Rule3– Should  have at least 1 numeric number.
+        public static string PasswordRule3Pattern = "^[A-Z]{1}[A-Za-z]{8,}[0-9]{1,}$";
+
         /// <summary>
         /// This method used to check Validation
         /// </summary>
