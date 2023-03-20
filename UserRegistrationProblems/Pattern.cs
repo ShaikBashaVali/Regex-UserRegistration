@@ -29,6 +29,9 @@ namespace UserRegistrationProblems
         //UC7-Password Rule3– Should  have at least 1 numeric number.
         public static string PasswordRule3Pattern = "^[A-Z]{1}[A-Za-z]{8,}[0-9]{1,}$";
 
+        //UC8-Password Rule3– Has  exactly 1 Special Characters.
+        public static string PasswordRule4Pattern = @"^[a-zA-Z0-9]?[~`!@#$%^&*()-_+={}[]|\;:""<>,./?]{1,8}$";
+
         /// <summary>
         /// This method used to check Validation
         /// </summary>
